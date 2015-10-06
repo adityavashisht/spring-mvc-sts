@@ -21,6 +21,16 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
     </listener>
     
     
+    <filter>
+        <filter-name>AllRequestProcessFilter</filter-name>
+        <filter-class>com.indasil.springmvc.web.filter.AllRequestProcessFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AllRequestProcessFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    
     <!--
 		- Servlet that dispatches request to registered handlers (Controller implementations).
 	-->

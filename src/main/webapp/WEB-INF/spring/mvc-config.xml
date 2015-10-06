@@ -18,4 +18,12 @@
 	        <property name="suffix" value=".jsp"/>
 	</bean>
 
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**/landing"/>
+            <mvc:exclude-mapping path="/**/pageTwo"/>
+            <bean class="com.indasil.springmvc.web.interceptor.LandingInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
 </beans>
