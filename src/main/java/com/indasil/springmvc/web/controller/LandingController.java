@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * Created by vashishta on 10/6/15.
  */
 @Controller
-@RequestMapping("/app")
 public class LandingController {
 
 

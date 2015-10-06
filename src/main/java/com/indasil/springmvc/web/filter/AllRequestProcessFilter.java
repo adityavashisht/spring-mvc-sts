@@ -14,7 +14,7 @@ public class AllRequestProcessFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("Filter invoked");
+
         filterChain.doFilter(servletRequest, servletResponse);
     }
 
